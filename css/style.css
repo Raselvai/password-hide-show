@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+.password-wrapper {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #065FF0;
+}
+
+.password-wrapper form {
+	width: 400px;
+	height: 50px;
+	background: #F3F3FF;
+	box-shadow: 0px 0px 20px 15px #2657a5b8;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+
+.password-wrapper input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: transparent;
+	padding-left: 20px;
+	font-size: 20px;
+	border-radius: 10px;
+	border: 2px solid transparent;
+	transition: .3s;
+}
+
+.password-wrapper input:focus {
+	border: 2px solid red;
+}
+
+.eye {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    color: red;
+}
+
+#hide1 {
+	display: none;
+}
